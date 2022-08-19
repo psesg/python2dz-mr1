@@ -4,6 +4,9 @@ import sys
 import string
 import random
 
+# python mapper_py2.py < part1.txt | sort | python reducer_py2.py | head -10000
+# if head < 10000 will be "BrokenPipeError: [Errno 32] Broken pipe" generated
+
 reload(sys)
 sys.setdefaultencoding('utf-8')  # required to convert to unicode
 
