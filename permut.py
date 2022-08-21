@@ -1,3 +1,5 @@
+import itertools
+import datetime as dt
 
 def permutations(s):
     if not s:
@@ -12,5 +14,13 @@ def permutations(s):
     return partial
 
 test = "PycharmPr"
+print dt.datetime.now().isoformat()
 pm = permutations(test)
 print len(pm)
+print dt.datetime.now().isoformat()
+per = itertools.permutations(test)
+i = 0
+for val in per:
+    i += 1
+print i
+print dt.datetime.now().isoformat()
