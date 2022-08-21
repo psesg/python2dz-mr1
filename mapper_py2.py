@@ -5,7 +5,7 @@ import string
 import random
 
 
-def randstr(chars=string.hexdigits, n=10):
+def randstr(chars=string.hexdigits, n=5):
     return ''.join(random.choice(chars) for _ in xrange(n))
 
 
